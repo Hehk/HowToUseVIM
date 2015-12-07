@@ -1,1 +1,1 @@
-# HowToUseVIM
+http://howtousevim.meteor.com/
