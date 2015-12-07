@@ -1,0 +1,48 @@
+<template name="EditPage">
+  <div class="edit-page page">
+    <h2>How do I Edit?</h2>
+    <div class="buttons">
+      <a href="/start">Prev</a>
+      <a href="/saving">Next</a>
+    </div>
+    <h3>VIM is modal editor: it allows for the user to interact with the file using different modes, such as Edit Mode, Replace Mode and Ex Mode to name a few.</h3>
+    <div class="terminal">
+      <div class="top">
+        <div class="circle red"></div>
+        <div class="circle yellow"></div>
+        <div class="circle green"></div>
+      </div>
+      <div class="bottom">
+        <pre>// Welcome to this editor!</pre>
+        <pre>// You are currently in insert mode.</pre>
+        <pre>// You can get back to Ex Mode by hitting 'esc'</pre>
+        <pre></pre>
+        <pre>console.log('Hello World!');</pre>
+        <pre></pre>
+        <div class="bottom-text">
+          --insert--
+        </div>
+      </div>
+    </div>
+    <div class="terminal">
+      <div class="top">
+        <div class="circle red"></div>
+        <div class="circle yellow"></div>
+        <div class="circle green"></div>
+      </div>
+      <div class="bottom">
+        <pre>// Welcome to this editor!</pre>
+        <pre>// You are currently in Ex mode.</pre>
+        <pre>// You can enter insert mode through 'i'</pre>
+        <pre></pre>
+        <pre>console.log('Hello World!');</pre>
+        <pre></pre>
+        <div class="bottom-text">
+          {user command}
+        </div>
+      </div>
+    </div>
+    <h3>To enter Edit Mode simply press <span class="bold">i</span> and to get back to the default Ex Mode press <span class="bold">esc</span>.</h3>
+  </div>
+
+</template>

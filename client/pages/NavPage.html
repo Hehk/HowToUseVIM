@@ -1,0 +1,163 @@
+<template name="NavPage">
+  <div class="nav-page page">
+    <h2>Navigate like a Boss</h2>
+    <div class="buttons">
+      <a href="/saving">Prev</a>
+      <a href="/commands">Next</a>
+    </div>
+
+    <!--
+      first terminal ===============================================================================
+    -->
+    <h2>Movement</h2>
+    <h3>
+      While in Ex Mode you can move with both the <span class="bold">arrow keys</span> and <span class="bold">H J K L</span>.
+      Moving with <span class="bold">H J K L</span> allows you to move arround the file without moving your hands out of normal keyboard orientation.
+    </h3>
+    <div class="terminal">
+      <div class="top">
+        <div class="circle red"></div>
+        <div class="circle yellow"></div>
+        <div class="circle green"></div>
+      </div>
+      <div class="bottom">
+        <pre>// h - left</pre>
+        <pre>// j - down</pre>
+        <pre>// k - up</pre>
+        <pre>// l - right</pre>
+        <pre> </pre>
+        <pre>console.log('Your neckbeard is growing.');</pre>
+        <pre> </pre>
+        <div class="bottom-text">
+          Stay in Normal Mode
+        </div>
+      </div>
+    </div>
+
+    <!--
+      second terminal ==============================================================================
+    -->
+    <h2>Advanced Movement</h2>
+    <h3>
+      You can move arround the file even faster with a unique set of commands:
+    </h3>
+    <ul>
+      <li>
+        <div class="command">
+          <span class="bold">o</span>
+        </div>
+        <div class="explain">
+          Go to the starting of the current line
+        </div>
+      </li>
+      <li>
+        <div class="command">
+          <span class="bold">^</span>
+        </div>
+        <div class="explain">
+          Go to the first non blank character of the line
+        </div>
+      </li>
+      <li>
+        <div class="command">
+          <span class="bold">$</span>
+        </div>
+        <div class="explain">
+          Go to the end of the current line
+        </div>
+      </li>
+      <li>
+        <div class="command">
+          <span class="bold">e</span>
+        </div>
+        <div class="explain">
+          Go to the end of the current word
+        </div>
+      </li>
+      <li>
+        <div class="command">
+          <span class="bold">b</span>
+        </div>
+        <div class="explain">
+          Go to the previous (before) word
+        </div>
+      </li>
+      <li>
+        <div class="command">
+          <span class="bold">w</span>
+        </div>
+        <div class="explain">
+          Go to the next word
+        </div>
+      </li>
+    </ul>
+    <div class="terminal">
+      <div class="top">
+        <div class="circle red"></div>
+        <div class="circle yellow"></div>
+        <div class="circle green"></div>
+      </div>
+      <div class="bottom">
+        <pre>// advanced movement allows the user to move really</pre>
+        <pre>// fast arround a file</pre>
+        <pre> </pre>
+        <pre>console.log('Move like a l33t hacks0r!');</pre>
+        <pre> </pre>
+        <div class="bottom-text">
+          Stay in Normal Mode
+        </div>
+      </div>
+    </div>
+
+    <!--
+      third terminal ===============================================================================
+    -->
+    <h2>Text Selection</h2>
+    <h3>
+      Hitting <span class="bold">v</span> while in normal mode will take the user into visual mode. While in visual mode they will select all content from the point where they entered visual mode to their current position.
+    </h3>
+    <div class="terminal">
+      <div class="top">
+        <div class="circle red"></div>
+        <div class="circle yellow"></div>
+        <div class="circle green"></div>
+      </div>
+      <div class="bottom">
+        <pre>// while selecting you can also move with search</pre>
+        <pre>// and advanced movement</pre>
+        <pre> </pre>
+        <pre>console.log('Much selection! Very wow!');</pre>
+        <pre> </pre>
+        <div class="bottom-text">
+          Stay in Normal Mode
+        </div>
+      </div>
+    </div>
+
+    <!--
+      fourth terminal ==============================================================================
+    -->
+    <h2>Copy and Paste</h2>
+    <h3>
+      You can preform a copy and paste operation through hitting <span class="bold">y</span> while in visual mode and then hitting <span class="bold">p</span> at the area you want to paste.
+    </h3>
+    <div class="terminal">
+      <div class="top">
+        <div class="circle red"></div>
+        <div class="circle yellow"></div>
+        <div class="circle green"></div>
+      </div>
+      <div class="bottom">
+        <pre>// copy and paste performs just like it would in</pre>
+        <pre>// any other editor but now you can do it without</pre>
+        <pre>// your mouse</pre>
+        <pre> </pre>
+        <pre>console.log('Now you can copy all the essays!');</pre>
+        <pre> </pre>
+        <div class="bottom-text">
+          Stay in Normal Mode
+        </div>
+      </div>
+    </div>
+  </div>
+</template>

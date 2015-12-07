@@ -1,0 +1,97 @@
+<template name="CommandPage">
+  <div class="command-page page">
+      <h2>Commands :D</h2>
+      <div class="buttons">
+        <a href="/navigation">Prev</a>
+        <a href="/conclusion">Next</a>
+      </div>
+      <h3>
+        VIM has a really cool set of tools that allow the user to interact with text in ways far beyond many edits.
+        These tools are called commands and they are used by typing in the command line at the bottom of the VIM view port.
+        A few of the most useful commands are:
+      </h3>
+      <ul>
+        <li>
+          <div class="command">
+            <span class="bold">:q</span>
+          </div>
+          <div class="explain">
+            Quit file without saving
+          </div>
+        </li>
+        <li>
+          <div class="command">
+            <span class="bold">:q!</span>
+          </div>
+          <div class="explain">
+            Quit file without saving, even with changes
+          </div>
+        </li>
+        <li>
+          <div class="command">
+            <span class="bold">:e</span>
+          </div>
+          <div class="explain">
+            Edit current file, without discarding current buffer
+          </div>
+        </li>
+        <li>
+          <div class="command">
+            <span class="bold">:e!</span>
+          </div>
+          <div class="explain">
+            Edit current file, discard any changes in current buffer
+          </div>
+        </li>
+        <li>
+          <div class="command">
+            [<span class="bold">count</span>] <span class="bold">dd</span>
+          </div>
+          <div class="explain">
+            Edit current file, discard any changes in current buffer
+          </div>
+        </li>
+        <li>
+          <div class="command">
+            <span class="bold">D</span>
+          </div>
+          <div class="explain">
+            Delete the characters under to cursor until the end of the line
+          </div>
+        </li>
+        <li>
+          <div class="command">
+            [<span class="bold">count</span>] <span class="bold">u</span>
+          </div>
+          <div class="explain">
+            Undo current action either 1 or [count] many times
+          </div>
+        </li>
+        <li>
+          <div class="command">
+            <span class="bold">/</span> [<span class="bold">regexp</span>]
+          </div>
+          <div class="explain">
+            Search the file with regular expression, navigate between the matching patterns with <span class="bold">n</span> and <span class="bold">N</span>.
+          </div>
+        </li>
+      </ul>
+      <div class="terminal">
+        <div class="top">
+          <div class="circle red"></div>
+          <div class="circle yellow"></div>
+          <div class="circle green"></div>
+        </div>
+        <div class="bottom">
+          <pre>// commands allow you to do things a lot faster</pre>
+          <pre>// than normal typing</pre>
+          <pre></pre>
+          <pre>console.log('Use these awesome new commands');</pre>
+          <pre></pre>
+          <div class="bottom-text">
+            {command}
+          </div>
+        </div>
+      </div>
+    </div>
+</template>

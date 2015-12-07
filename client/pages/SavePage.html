@@ -1,0 +1,30 @@
+<template name="SavePage">
+  <div class="save-page page">
+    <h2>How to Save a File?</h2>
+    <div class="buttons">
+      <a href="/edit">Prev</a>
+      <a href="/navigation">Next</a>
+    </div>
+    <h3>Saving a file can be rather confusing to new users, the command is very abnormal when compared to standard text editors. In order to save a file enter Ex Mode and hit <span className="bold">Shift</span>+<span className="bold">Z</span>+<span className="bold">Z</span>.</h3>
+    <div class="terminal">
+      <div class="top">
+        <div class="circle red"></div>
+        <div class="circle yellow"></div>
+        <div class="circle green"></div>
+      </div>
+      <div class="bottom">
+        <pre>// Welcome to this editor!</pre>
+        <pre>// You are currently in Ex mode.</pre>
+        <pre></pre>
+        <pre>console.log('Hello World!');</pre>
+        <pre></pre>
+        <pre>// best change ever</pre>
+        <pre></pre>
+        <div class="bottom-text">
+          {user command}
+        </div>
+      </div>
+    </div>
+    <h3>If you leave a file without saving VIM will create a temporary file that holds your changes in order so that you do not lose your work.</h3>
+  </div>
+</template>

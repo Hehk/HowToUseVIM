@@ -1,0 +1,78 @@
+@import '../../lib/variables.scss';
+
+$terminal-top-height: 20px;
+$terminal-border-radius: 5px;
+$terminal-button-height: 10px;
+
+.terminal {
+  color: $custom-black;
+  margin: 20px auto;
+  border-radius: $terminal-border-radius;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
+  width: 500px;
+  display: flex;
+  flex-direction: column;
+  font-family: $font-2;
+
+  .top {
+    height: $terminal-top-height;
+    border-radius: $terminal-border-radius $terminal-border-radius 0 0;
+
+    background-color: #aaaaaa;
+    display: flex;
+    justify-content: left;
+    .circle {
+      background-color: $custom-black;
+      width: $terminal-button-height;
+      height: $terminal-button-height;
+      margin: $terminal-border-radius 0 $terminal-border-radius $terminal-border-radius;
+      border-radius: 50%;
+
+      &.red {
+        background-color: rgb(250, 70, 70);
+      }
+
+      &.green {
+        background-color: rgb(25, 180, 50);
+      }
+
+      &.yellow {
+        background-color: rgb(250, 180, 40);
+      }
+    }
+  }
+
+  .bottom {
+    flex-grow: 1;
+    border-radius: 0 0 $terminal-border-radius $terminal-border-radius;
+    background-color: rgba(240, 240, 240, 0.8);
+    position: relative;
+
+    p, pre {
+      margin: 0 5px 0 5px;
+      padding: 0;
+      word-break: break-all;
+
+      font-weight: normal;
+      font-family: $font-2;
+      font-size: 1em;
+
+      &> pre, &> div {
+        float: left;
+      }
+    }
+
+    p {
+      &:before {
+        content: '$ ';
+        color: $color4;
+      }
+    }
+
+    .bottom-text {
+      border-top: 1px dashed #aaaaaa;
+      margin: 0 5px;
+      color: $color4;
+    }
+  }
+}
